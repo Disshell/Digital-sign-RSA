@@ -73,7 +73,7 @@ namespace RSADSForm
             WolframAlpha wolfram = new WolframAlpha("H6JLXP-RJ7Y7RVPPE");
             try
             {
-                var queryResult = wolfram.Query("nextPrime[2^1023 + RandomInteger(2^1023)]");
+                var queryResult = wolfram.Query("nextPrime[2^1022 + RandomInteger(2^1023)]");
                 if (queryResult == null)
                 {
                     throw new Exception("Нет доступа в интернет");
